@@ -75,7 +75,7 @@ set smartcase
 set incsearch
 
 " tree
-map <silent> <leader>n :NERDTreeFocus<CR>
+map <silent> <leader>m :NERDTreeFocus<CR>
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
 let NERTTreeMinimalUI=1
