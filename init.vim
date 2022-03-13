@@ -1,6 +1,7 @@
 " curl -fLO $HOME/.config/nvim/plug.vim --create-dirs \
 "    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+let mapleader=","
 filetype plugin indent on
 syntax on
 
@@ -60,10 +61,6 @@ let NERDTreeShowHidden=1
 " ctrlp
 set rtp^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" go
-let g:go_fmt_command = "goimports" 
-let g:go_auto_type_info = 1
 
 set background=light
 set termguicolors

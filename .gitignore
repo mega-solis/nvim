@@ -20,6 +20,5 @@ tags
 
 # dynamic dirs
 autoload
-ftdetect
 plugged
 
