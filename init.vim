@@ -5,7 +5,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'NLKNguyen/papercolor-theme' " theme
 Plug 'tpope/vim-fugitive' " git
 Plug 'preservim/nerdtree' " tree
-Plug 'ctrlpvim/ctrlp.vim' " search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', " completion 
        \ {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'vim-airline/vim-airline' " airline
@@ -74,17 +75,18 @@ set smartcase
 set incsearch
 
 " tree
-map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <leader>n :NERDTreeFocus<CR>
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
 let NERTTreeMinimalUI=1
 let NERTTreeDirArrow=1
 
-" ctrlp
-set rtp^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
 " airline
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
+" fzf
+nnoremap <silent> <leader>f :FZF<cr>
+nnoremap <silent> <leader>F :FZF ~<cr>
+nnoremap <C-p> :Files<Cr>
