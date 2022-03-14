@@ -90,4 +90,3 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " fzf
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>F :FZF ~<cr>
-nnoremap <C-p> :Files<Cr>
