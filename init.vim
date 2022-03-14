@@ -7,6 +7,7 @@ Plug 'tpope/vim-fugitive' " git
 Plug 'preservim/nerdtree' " tree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', " completion 
        \ {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'vim-airline/vim-airline' " airline
