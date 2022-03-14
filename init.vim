@@ -79,8 +79,9 @@ set incsearch
 map <silent> <leader>m :NERDTreeFocus<CR>
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
-let NERTTreeMinimalUI=1
-let NERTTreeDirArrow=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrow=1
+let NERDTreeShowLineNumbers=1
 
 " airline
 let g:airline_powerline_fonts=1
