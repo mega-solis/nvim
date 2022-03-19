@@ -5,11 +5,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'NLKNguyen/papercolor-theme' " theme
 Plug 'tpope/vim-fugitive' " git
 Plug 'preservim/nerdtree' " tree
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'neoclide/coc.nvim', " completion 
-       \ {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'vim-airline/vim-airline' " airline
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons' " dev icons
@@ -18,6 +15,13 @@ Plug 'cespare/vim-toml' " toml
 Plug 'SirVer/ultisnips' " snippets
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'} " go
 Plug 'terryma/vim-multiple-cursors' " multiple lines edit 
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 call plug#end()
 " -----------------------------------------------------------------------------
 
@@ -88,6 +92,9 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" fzf
-nnoremap <silent> <leader>f :FZF<cr>
-nnoremap <silent> <leader>F :FZF ~<cr>
+" telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
