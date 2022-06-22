@@ -1,3 +1,6 @@
+
+let g:rustfmt_autosave = 1
+
 lua <<EOF
 local nvim_lsp = require'lspconfig'
 local opts = {
