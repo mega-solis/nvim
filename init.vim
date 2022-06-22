@@ -68,7 +68,7 @@ set mouse+=a
 set clipboard^=unnamed
 set noscrollbind
 set wildmenu
-set autochdir
+"set autochdir
 set nowrap
 set noerrorbells visualbell t_vb=
 set tabstop=4 softtabstop=4
