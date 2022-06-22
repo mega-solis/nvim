@@ -15,6 +15,7 @@ Plug 'cespare/vim-toml' " toml
 Plug 'SirVer/ultisnips' " snippets
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'} " go
 Plug 'simrat39/rust-tools.nvim' " rust
+Plug 'timonv/vim-cargo' " cargo
 Plug 'terryma/vim-multiple-cursors' " multiple lines edit 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
